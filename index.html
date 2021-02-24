@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unipapa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'M PLUS 1p', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /*導覽列*/
+
+        .logo {
+            width: 75%;
+        }
+
+        .navbar1 {
+            background-color: rgb(230, 230, 232);
+        }
+
+        .nav-item {
+            font-size: 0.875rem;
+        }
+
+        .box20 {
+            width: 2%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .box20 img {
+            margin-left: 2.2rem;
+        }
+
+        .box20 span {
+            font-size: 0.5rem;
+            position:relative;
+            text-align: center;
+           /* padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            padding: 0 auto;*/
+            
+            color: white;
+        }
+
+        .box20 .m1{
+background-color: rgb(32, 32, 32); 
+width: 1rem;
+height: 1rem;
+border-radius: 50%;
+position: absolute;
+top: 15%;
+right:5.5%;
+text-align: center;
+line-height: 1.8rem;
+
+        }
+
+
+
+        /*兩個大螢幕*/
+        .b1 {
+            background-image: url(./images/01.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0%;
+            padding: 4rem 0;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        .b2 {
+            background-image: url(./images/02.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0%;
+            margin-bottom: 6.25rem;
+        }
+
+        .w1 {
+            margin-left: -50%;
+            text-align: center;
+        }
+
+        .w13 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+
+        }
+
+        .w12 {
+            text-decoration: none;
+        }
+
+        .w12:hover {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .w2 {
+            margin-left: 50%;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .w2 h6 {
+            color: white;
+        }
+
+        .w2 .a1 {
+            color: white;
+            font-weight: bolder;
+        }
+
+        .w2 .a2 {
+            color: white;
+        }
+
+        .w2 span {
+            color: rgb(243, 141, 176);
+            font-weight: bolder;
+        }
+
+        .w2 img {
+            width: 40%;
+        }
+
+
+
+        /*新品發表+活動特集*/
+        h4 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .box {
+            border-radius: 10px;
+            overflow: hidden;
+            border: 0.1px solid #bcbcbc;
+            border-color: #eee !important;
+            transition: .5s;
+        }
+
+        .box:hover {
+            box-shadow: 3px 3px 10px gainsboro;
+
+        }
+
+        img {
+            max-width: 100%;
+
+        }
+
+        .word1 {
+            padding: 10px;
+        }
+
+        .upper1 img {
+            position: relative;
+        }
+
+        .upper1 p {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+        }
+
+
+        .wrapper2 {
+            margin: 0 40px;
+            margin-bottom: 100px;
+
+        }
+
+        .upper1 img {
+            background-color: rgb(250, 250, 250);
+        }
+
+        /*文章特集*/
+        .wrapper4 {
+            margin: 0 40px;
+            margin-bottom: 50px;
+        }
+
+        /*限定促銷*/
+
+        .box10 {
+            background-color: rgb(255, 255, 255);
+            font-size: 0.813rem;
+            padding-right: 2rem;
+            padding-top: .5rem;
+
+        }
+
+        .box3 {
+            background-color: rgb(250, 250, 250);
+
+        }
+
+        .box3 img {
+            margin-top: .5rem;
+
+        }
+
+
+        .dif8 {
+            color: rgb(185, 185, 185);
+            font-size: 0.8rem;
+            text-decoration: line-through;
+            text-align: right;
+        }
+
+        .dif9 {
+            color: rgb(189, 39, 39);
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+
+
+
+
+
+        /*關於我們*/
+        .wrapper5 {
+            margin: 0 40px;
+            margin-bottom: 100px;
+
+        }
+
+        .box4 {
+            background-color: white;
+            padding: 1.40rem;
+            font-size: 0.813rem;
+        }
+
+        .box30 {
+            background-color: rgb(250, 250, 250);
+
+        }
+
+        .h123 {
+            margin: 0 1px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 0.1px solid #bcbcbc;
+            border-color: #eee !important;
+            margin-bottom: 1rem;
+            transition: .5s;
+        }
+
+        .h123:hover {
+            box-shadow: 3px 3px 10px gainsboro;
+            text-decoration: none;
+
+        }
+
+
+
+
+
+
+
+        .box7 {
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid white;
+        }
+
+        .box6 {
+            font-size: 0.875rem;
+            color: rgb(250, 250, 250);
+        }
+
+        .box6 span {
+            margin-right: 1.25rem;
+        }
+
+        .h456 {
+            display: flex;
+            justify-content: right;
+
+
+        }
+
+        h6 {
+            font-size: 0.813rem;
+        }
+
+        .s123 {
+            font-size: 0.75rem;
+            ;
+            color: rgb(185, 185, 185);
+        }
+
+        .s456 a {
+            font-size: 0.75rem;
+            color: rgb(185, 185, 185);
+            text-decoration: none;
+        }
+
+        .s789 {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.813rem;
+        }
+
+
+        /*footer*/
+        .footer {
+            width: 100%;
+            background-color: rgb(50, 51, 51);
+            padding: 2.5rem;
+
+        }
+
+
+        .f1 {
+            font-size: 10px;
+            color: rgb(250, 250, 250);
+            font-weight: bolder;
+        }
+
+        .f1 p {
+            text-align: right;
+        }
+
+        .box5 {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .box5 img {
+            margin-left: 1.8rem;
+            margin-bottom: 1.8rem;
+            width: 3%;
+            text-align: right;
+            justify-content: right;
+
+        }
+
+
+        .wrapper8 {
+            margin: 0 40px;
+            margin-bottom: 100px;
+
+        }
+
+    
+
+        .box .upper1 p {
+            background-color: rgb(32, 32, 32);
+            padding: 0.1rem 0.25rem;
+            color: white;
+            border-radius: 10%;
+        }
+
+        @media screen and (max-width:768px) {
+            .box5 {
+                display: table-column;
+                justify-content: flex-start;
+                order: -1;
+
+            }
+
+            .box5 img {
+
+                margin-bottom: 1.8rem;
+                width: 5%;
+                left: 0;
+            }
+
+            .box20 .m1{
+top: 15%;
+right:13%;
+
+        }
+
+            .f1 {
+                font-size: 10px;
+                color: rgb(250, 250, 250);
+                font-weight: bolder;
+                display: table-column;
+
+            }
+
+            .f1 p {
+                text-align: left;
+            }
+
+            .dif9 {
+                color: rgb(189, 39, 39);
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: right;
+                display: table-column;
+            }
+
+            .dif8 {
+                color: rgb(185, 185, 185);
+                font-size: 0.8rem;
+                text-decoration: line-through;
+                text-align: left;
+                display: table-column;
+            }
+
+            .b1 {
+                background-image: url(./images/40-01.png);
+                min-width: 100%;
+            }
+
+            .b2 {
+                background-image: url(./images/41.png);
+                min-width: 100%;
+            }
+
+            .w1 {
+                margin: 0 auto;
+                margin-top: -3rem;
+
+            }
+
+            .w14 {
+                margin-bottom: 9rem;
+            }
+
+
+
+            .w2 {
+                margin-left: 10%;
+                padding-top: 50%;
+            }
+
+            .w2 img {
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width:1480px) {
+            .container-fluid{
+                padding-left:15rem;
+                padding-right:15rem;
+            }
+
+            .box20 .m1{
+top: 15%;
+right:4.5%;
+
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar1 navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="./images/logotype-unipapa.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-4 font-weight-bold">
+                        <a class="nav-link" href="#">居家清潔</a>
+                    </li>
+                    <li class="nav-item mr-4 font-weight-bold">
+                        <a class="nav-link" href="#">防蚊防蟲 </a>
+                    </li>
+                    <li class="nav-item mr-4 font-weight-bold">
+                        <a class="nav-link" href="#">電器製品 </a>
+                    </li>
+                    <li class="nav-item mr-4 font-weight-bold">
+                        <a class="nav-link" href="#">雜貨日用品 </a>
+                    </li>
+                    <li class="nav-item mr-4 font-weight-bold">
+                        <a class="nav-link" href="#">選物推薦 </a>
+                    </li>
+                </ul>
+
+                <div class="box20">
+                    <img src="images/search-01.svg"></img>
+                    <img src="images/shopping-01.svg">
+                    <div class="m1"><span style="position:relative;top:-0.5rem;">0</span></img></div>
+                </div>
+
+                <span style="margin-left: 2.2rem;">登入</span>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="wrapper1">
+        <div class="b1">
+            <div class="w1">
+                <h6><a class="w12" href="https://www.unipapa.com/products/extension-cord">感動上市</a></h6>
+                <h1 class="w13 display-4">有序延長線</h1>
+                <p class="w14 lead">加大孔距，隨處固定，讓空間井然有序。</p>
+                </br>
+                </br>
+                <img src="images/logotype-unipapa.svg">
+                </br>
+                </br>
+                </br>
+
+
+
+            </div>
+        </div>
+
+        <div class="b2">
+            <div class="w2">
+                <h6>春夏限定</h6>
+                <h1 class="a1 display-4"><span>pink</span> different</h1>
+                <p class="a2 lead">生活卡匣、防蚊系列</p>
+                </br>
+                </br>
+                <img src="images/39.png">
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="wrapper2">
+            <div>
+                <h4>活動特輯</h4>
+            </div>
+            <div class="row">
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/03.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>有序延長線-心得募集</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/04.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>#02 Fashion Ma-居家清潔系列</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/05.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>不受蚊蟲滋擾的竅門</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/06.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>週年慶-Unipapa到你家</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper2">
+            <div>
+                <h4>新品發表</h4>
+            </div>
+            <div class="row">
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper1">
+                            <img src="./images/07.png">
+                            <p>NEW</p>
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>彎腰背刷</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper1">
+                            <img src="./images/08.png">
+                            <p>NEW</p>
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>有序整線扣組</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper1">
+                            <img src="./images/09.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>有序延長線</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper1">
+                            <img src="./images/10.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>鱷魚牌聯名-防蚊卡匣(粉紅色)</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper8">
+            <div>
+                <h4>限定促銷</h4>
+            </div>
+            <div class="row">
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/19.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊卡匣-自黏帶(白)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$499</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/20.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊卡匣-自黏帶(粉)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$410</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$389</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/21.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">長效除蟑噴霧</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$349</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$299</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/22.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">除蟑+除蚊噴霧</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$690</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$590</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/23.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊卡匣+皮革帶(黑)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$499</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/24.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊卡匣+皮革帶(白)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$499</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/25.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊卡匣-自黏帶(黑)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$499</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/26.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊卡匣-自黏帶(綠)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$410</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$389</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/27.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊套組 A</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$1199</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1099</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/28.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">防蚊套組 B</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$2099</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1820</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/29.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">Theta 斜打電蚊拍</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$799</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$799</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/30.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">立即除蚊噴霧</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$349</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$299</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/31.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">酷黑捕蟑屋</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$129</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/32.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">家用手工具組</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$1300</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1280</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/33.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">迷你精密手工具組</a>
+                            </br>
+                            </br>
+                        </br>
+
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$1300</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1280</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/34.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">Soft 中性漱口水</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$590</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/35.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">雙層抗風直骨傘(黑)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$1680</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1344</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/36.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">雙層抗風直骨傘(藍)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$1680</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1344</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/37.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">雙層抗風直骨傘(灰)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$1680</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1344</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-sm-1 col-md-4 col-lg-4 col-xl-3">
+                    <div class="h123 row">
+                        <div class="box3 col-md-4">
+                            <img src="images/38.png">
+                        </div>
+                        <div class="box10 col-md-8">
+                            <a class="text-dark" href="#">雙層抗風直骨傘(白)</a>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="row">
+                                <div class="dif8 col-md-8 text-right">
+                                    <span>$1680</span>
+                                </div>
+                                <div class="dif9 col-md-4 text-right">
+                                    <span>$1344</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper4">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h4>文章特集</h4>
+                </div>
+                <div class="col-sm-6 col-md-6 text-right">
+                    <a class="s789" href="#">查看全部文章</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/11.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>Unipapa 名字莫名的由來</h6>
+                                </br>
+                                <div class="row">
+                                    <div class="s123 col-md-6">
+                                        <span>2020/07/21</span>
+                                    </div>
+                                    <div class="s456 col-md-6 text-right">
+                                        <a href="#">開發日誌</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/12.jpg">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>為何不上募資平台做募資呢</h6>
+                                </br>
+                                <div class="row">
+                                    <div class="s123 col-md-6">
+                                        <span>2020/06/29</span>
+                                    </div>
+                                    <div class="s456 col-md-6 text-right">
+                                        <a href="#">開發日誌</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/13.jpeg">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>電蚊拍的拍面是...</h6>
+                                </br>
+                                <div class="row">
+                                    <div class="s123 col-md-6">
+                                        <span>2019/03/25</span>
+                                    </div>
+                                    <div class="s456 col-md-6 text-right">
+                                        <a href="#">開發日誌</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 mb-3">
+                    <div class="box">
+                        <div class="upper">
+                            <img src="./images/14.png">
+                        </div>
+                        <div class="word">
+                            <div class="word1">
+                                <h6>我們合作最棒的台灣好品牌之一</h6>
+                                </br>
+                                <div class="row">
+                                    <div class="s123 col-md-6">
+                                        <span>2019/02/25</span>
+                                    </div>
+                                    <div class="s456 col-md-6 text-right">
+                                        <a href="#">開發日誌</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper5">
+            <div>
+                <h4>關於我們</h4>
+            </div>
+            <div class="row">
+                <div class="article col-md-3 col-sm-6 col-6">
+                    <div class="h123 row">
+                        <div class="box30 col-md-5">
+                            <img src="images/15.png">
+                        </div>
+                        <div class="box4 col-md-7">
+                            <a class="text-dark" href="#">企業資訊</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 col-sm-6 col-6">
+                    <div class="h123 row">
+                        <div class="box30 col-md-5">
+                            <img src="images/16.png">
+                        </div>
+                        <div class="box4 col-md-7">
+                            <a class="text-dark" href="#">實體販售地點</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 col-sm-6 col-6">
+                    <div class="h123 row">
+                        <div class="box30 col-md-5">
+                            <img src="images/17.png">
+                        </div>
+                        <div class="box4 col-md-7">
+                            <a class="text-dark" href="#">人才招募</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article col-md-3 col-sm-6 col-6">
+                    <div class="h123 row">
+                        <div class="box30 col-md-5">
+                            <img src="images/18.png">
+                        </div>
+                        <div class="box4 col-md-7">
+                            <a class="text-dark" href="#">支援服務</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="box7 row">
+            <div class="box6 col-md-6">
+                <span>企業資訊</span>
+                <span>實體販售地點</span>
+                <span>人才招募</span>
+                <span>支援服務</span>
+            </div>
+            <div class="box5 col-md-6">
+                <img src="images/facebook.svg"></img>
+                <img src="images/line-logo-svgrepo-com.svg"></img>
+                <img src="images/instagram-seeklogo.com.svg"></img>
+            </div>
+        </div>
+        <div class="row">
+            <div class="f1 col-md-6">
+                <span>有理百物股份有限公司</span>
+            </div>
+            <div class="f1 col-md-6">
+                <p>© Unipapa Inc. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
